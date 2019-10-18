@@ -1,9 +1,9 @@
 module.exports = {
   pathPrefix: "__GATSBY_IPFS_PATH_PREFIX__",
   siteMetadata: {
-    name: `Fabian Schultz`,
-    title: `Gatsby Deck`,
-    date: `July 30, 2018`,
+    name: `Fission`,
+    title: `Live from laptop`,
+    date: `October 19, 2019`,
   },
   plugins: [
     "gatsby-plugin-ipfs",

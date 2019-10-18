@@ -132,6 +132,12 @@ h2 {
   margin-bottom: 0.5rem;
 }
 
+h4 {
+  color: #FF5274;
+  font-weight: 200;
+  font-size: 28px;
+}
+
 p {
   margin-top: 1rem;
   margin-bottom: 1rem;

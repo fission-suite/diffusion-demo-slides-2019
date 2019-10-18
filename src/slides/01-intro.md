@@ -1,10 +1,17 @@
-# Live From Laptop ⚡️
+# Fission Live
+## ⚡️
+#### There Is No Step Two...
 
-{tag line}
+---
+
+![](https://imgur.com/XfdcZ83.png)
+
+_🔖 Slides at https://df-slides.fission.codes_
 
 ---
 
 ## Install IPFS
+_A one line prerequisite_
 
 ```shell
 # MacOS
@@ -16,72 +23,93 @@ snap install ipfs-desktop
 # Windows
 choco install ipfs-desktop
 ```
----
 
-## Download Fission
-
-**Mac:** https://github.com/fission-suite/web-api/releases/download/1.9.0/macos-cli
-
-**Linux:** https://github.com/fission-suite/web-api/releases/download/1.9.0/deb-cli
+_Other installation options can be found at https://guide.fission.codes/installation_
 
 ---
 
-## Install Fission
+## Install Fission (MacOS)
 ```bash
-# Or wherever you may have downloaded it to
-cd ~/Downloads
+
+brew tap fission-suite/fission
+brew install fission-cli
+```
+
+---
+
+## Install Fission (Linux)
+
+```bash
+# Download our binary
+curl
+  \ https://github.com/fission-suite/web-api/releases/download/1.9.0/deb-cli
+  \ -o fission-cli
 
 # Give it executable permission
-sudo chmod +x ./macos-cli
+sudo chmod +x ./fission-cli
 
 # And move the file to your PATH:
-sudo mv ./macos-cli /usr/local/bin/fission
+sudo mv ./fission-cli /usr/local/bin/fission
 ```
+️_Yum and Aptitude are on their way! We promise!_ 💜
+
+---
+## Going Live ⚡️
+
+![](https://imgur.com/rT0JFjL.gif)
 
 ---
 
-## Register
-```bash
-# Get your free account setup
-fission register
-```
-
----
-
-## It's ALIVE!
+## Serving Directories
 
 ```bash
-# Create a simple site
-mkdir my-sweet-fission-app
-cd my-sweet-fission-app
-echo "Hello Diffusion\!" >> index.html
-
-curl https://i.imgur.com/MhUt8uB.gif --output john.gif
-echo "<br/><img src=\"john.gif\"/>" >> index.html
-
-# Let it loose
+rm index.html
 fission up
-open https://ipfs.runfission.com/ipfs/Qmerj2V9i7Qq4JKoM1pKtv1wDaRgcp3E6mMPcZEEBx5Uij/
-
 ```
 
----
-
-## Serving directories
+![](https://i.imgur.com/fWhCDMf.png)
 
 ---
 
 ## Serving individual files
 
+```bash
+# serve from an existing directory
+open https://ipfs.runfission.com/ipfs/{cid}/john.gif
+
+# serve just one file
+fission up john.gif
+```
+
 ---
 
-## Serving Web apps
+## Serving Web Apps
+
+```bash
+# Install Gatsby
+npm i -g gatsby-cli
+
+# Get a template of your choosing
+gatsby new fission-demo
+  \ https://github.com/greglobinski/gatsby-starter-hero-blog
+
+# Navigate to the project directory
+cd fission-demo
+
+# Build and deploy the site to ipfs
+gatsby build
+fission up public
+```
+https://ipfs.runfission.com/ipfs/QmeNVbSXDN1DeKnCwgAG7rWSRDxGxoNG3XcFsAoVJRR6mF/
 
 ---
 
-## Watching
+## Portable User Settings
+![](https://imgur.com/QlK6NCf.png)
+
+https://fission-suite.github.io/ipfs-user-settings/
 
 ---
 
-# Thank you
+# Thanks for watching!
 (Btw, these slide are all on run from fission live 😉)

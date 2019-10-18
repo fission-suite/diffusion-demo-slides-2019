@@ -56,7 +56,7 @@ mkdir my-sweet-fission-app
 cd my-sweet-fission-app
 echo "Hello Diffusion\!" >> index.html
 
-curl https://media1.tenor.com/images/27e8b015e35130e7b4f62dc3d9a95dbe/tenor.gif --output john.gif
+curl https://i.imgur.com/MhUt8uB.gif --output john.gif
 echo "<br/><img src=\"john.gif\"/>" >> index.html
 
 # Let it loose

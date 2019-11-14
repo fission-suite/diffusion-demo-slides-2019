@@ -4,9 +4,9 @@
 
 ---
 
-![](https://imgur.com/XfdcZ83.png)
+![](https://imgur.com/1AsURoo.png)
 
-_🔖 Slides at https://df-slides.fission.codes_
+_🔖 Slides at https://slides.runfission.com_
 
 ---
 
@@ -42,7 +42,7 @@ brew install fission-cli
 ```bash
 # Download our binary
 curl
-  \ https://github.com/fission-suite/web-api/releases/download/1.9.0/deb-cli
+  \ https://github.com/fission-suite/web-api/releases/download/1.16.0/deb-cli
   \ -o fission-cli
 
 # Give it executable permission
@@ -75,7 +75,7 @@ fission up
 
 ```bash
 # serve from an existing directory
-open https://ipfs.runfission.com/ipfs/{cid}/john.gif
+open https://diffdemo.runfission.com/john.gif
 
 # serve just one file
 fission up john.gif
@@ -100,7 +100,7 @@ cd fission-demo
 gatsby build
 fission up public
 ```
-https://ipfs.runfission.com/ipfs/QmeNVbSXDN1DeKnCwgAG7rWSRDxGxoNG3XcFsAoVJRR6mF/
+https://blog.runfission.com
 
 ---
 
